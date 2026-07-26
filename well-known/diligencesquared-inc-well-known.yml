@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: probed
+source: live HTTP probes of provider hosts
+note: No .well-known endpoints are published. All probed paths returned 404 (www)
+  or redirect-to-login (app). Empty result is expected for a company with no public
+  API surface.
+endpoints:
+- host: www.diligencesquared.com
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: www.diligencesquared.com
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: www.diligencesquared.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- host: www.diligencesquared.com
+  path: /.well-known/api-catalog
+  status: 404
+  file: null
+- host: www.diligencesquared.com
+  path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- host: app.diligencesquared.com
+  path: /.well-known/security.txt
+  status: 307
+  file: null
+  redirect: /login
+- host: app.diligencesquared.com
+  path: /.well-known/openid-configuration
+  status: 307
+  file: null
+  redirect: /login

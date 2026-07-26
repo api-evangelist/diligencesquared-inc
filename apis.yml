@@ -1,8 +1,26 @@
 aid: diligencesquared-inc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/diligencesquared-inc.png
 name: Diligencesquared Inc
-description: Diligencesquared Inc is a company surfaced as a portfolio company of y-combinator and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: DiligenceSquared is an AI-powered commercial due diligence and market
+  research platform serving private equity firms, credit investors, and corporate
+  clients. It deploys AI voice agents to run hundreds of simultaneous investor-grade
+  expert interviews, then organizes the findings into structured, fully
+  source-traceable market intelligence for investment decision-making. Backed by
+  Y Combinator, the company operates a customer web application at
+  app.diligencesquared.com and publishes a Vanta-hosted trust center. As of this
+  enrichment pass it exposes no public developer API, OpenAPI, SDK, or documentation
+  surface.
 url: https://raw.githubusercontent.com/api-evangelist/diligencesquared-inc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +30,43 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Due Diligence
+- Market Research
+- Private Equity
+- Artificial Intelligence
+- AI Agents
+- Investment Research
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/diligencesquared-inc-domain-security.yml
+- type: Website
+  url: https://www.diligencesquared.com
+- type: SignUp
+  url: https://app.diligencesquared.com/login
+- type: Login
+  url: https://app.diligencesquared.com/login
+- type: Support
+  url: https://www.diligencesquared.com/contact
+- type: TermsOfService
+  url: https://www.diligencesquared.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.diligencesquared.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/diligencesquared
+- type: TrustCenter
+  url: https://trust.diligencesquared.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
