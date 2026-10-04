@@ -22,7 +22,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/diligencesquared-inc.png
-name: Diligencesquared Inc
+name: Diligencesquared
 description: DiligenceSquared is an AI-powered commercial due diligence and market
   research platform serving private equity firms, credit investors, and corporate
   clients. It deploys AI voice agents to run hundreds of simultaneous investor-grade
@@ -81,3 +81,4 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-legal-name: Diligencesquared Inc
